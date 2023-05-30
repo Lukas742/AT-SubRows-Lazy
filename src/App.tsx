@@ -43,7 +43,7 @@ const COLUMNS = [{ accessor: "name", Header: "Name" }];
 
 const useLazyExpand = (hooks) => {
   hooks.getToggleRowExpandedProps.push((props, { row }) => {
-    // here you can either define custom logic, for when a row should be expandable
+    // here you can define custom logic, for when a row should be expandable
     if (row.original.subRows) {
       row.canExpand = true;
     }
